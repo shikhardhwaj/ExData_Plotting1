@@ -24,7 +24,7 @@ plot(b$Timestamp,b$Voltage,type="l",xlab = "datetime",ylab="Voltage")
 
 #third graph
 #Creates plot of date/time v Sub metering 1 data
-plot(b$Timestamp,b$Sub_metering_1,type="l",xlab = "",ylab = "Energy sub metering")
+plot(b$Timestamp,b$Sub_metering_1,type="l",xlab = "",ylab = "Energy Submetering")
 #Adds line graph for date/time v Sub metering 2 data in red
 lines(b$Timestamp,b$Sub_metering_2,type="l",col="red")
 #Adds line graph for date/time v Sub metering 3 data in red
@@ -33,7 +33,7 @@ lines(b$Timestamp,b$Sub_metering_3,type="l",col="blue")
 legend("topright",lty=1, lwd=2,col = c("Black", "red", "blue"), legend = c( "Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
 
 #fourth graph
-plot(b$Timestamp,b$Global_reactive_power,type="l",xlab ="datetime",ylab="Global_Reactive_Power")
+plot(b$Timestamp,b$Global_reactive_power,type="l",xlab ="datetime",ylab="Global_reactive_power")
 
 #write to png file
 dev.copy(png,file="plot4.png",height=480,width=480)
