@@ -30,7 +30,7 @@ lines(b$Timestamp,b$Sub_metering_2,type="l",col="red")
 #Adds line graph for date/time v Sub metering 3 data in red
 lines(b$Timestamp,b$Sub_metering_3,type="l",col="blue")
 #adds legend to plot
-legend("topright",lty=1,col = c("Black", "red", "blue"), legend = c( "Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
+legend("topright",lty=1, lwd=2,col = c("Black", "red", "blue"), legend = c( "Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
 
 #fourth graph
 plot(b$Timestamp,b$Global_reactive_power,type="l",xlab ="datetime",ylab="Global_Reactive_Power")
